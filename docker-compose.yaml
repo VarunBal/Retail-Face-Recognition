@@ -1,10 +1,12 @@
 version: "1.0"
 
 services:
-  jupyter-lab:
+  face-rec:
     build: .
     ports:
-      - "8888:8888"
+      - "8889:8888"
+    volumes:
+      - .:/jlabs
     deploy:
       resources:
         reservations:
